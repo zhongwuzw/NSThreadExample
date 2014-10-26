@@ -67,13 +67,13 @@ void mainRunLoopObserver(CFRunLoopObserverRef observer, CFRunLoopActivity activi
     [self.window makeKeyAndVisible];
    
     //NSThread subclass and run loop example
-    [self launchRunLoopThread];
+//    [self launchRunLoopThread];
     
     //NSThread with CFRunLoop
-    //[self lauchCFRunLoopThread];
+ //   [self lauchCFRunLoopThread];
     
     //NSThread with input source
-    //[self launchInputSourceThread];
+    [self launchInputSourceThread];
     
     //NSThread with observer
     //[self launchObserverThread];

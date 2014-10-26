@@ -46,7 +46,7 @@
     
 }
 
-- (void)fireCommandsOnRunLoop:(CFRunLoopRef)runloop
+- (void)fireCommandsOnRunLoop:(CFRunLoopRef)runloop //通过让runloop醒来来让线程醒来以便能够处理sourceFired函数
 {
     CFRunLoopSourceSignal(runLoopSource);
     CFRunLoopWakeUp(runloop);
